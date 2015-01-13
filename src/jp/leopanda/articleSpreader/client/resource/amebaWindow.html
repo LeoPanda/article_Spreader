@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>amebaWindow</title>
+	<script type="text/javascript">
+ 		function dosubmit(){
+			var userid = document.getElementById("userid").value;
+			var password = document.getElementById("password").value;
+			if((userid.length > 0) && (password.length > 0)) {
+				window.opener.__dologin(userid,password);
+        		window.close();
+        	}else{
+        		window.alert("入力してください。");
+        	}
+ 		}
+	</script>
+   </head>
+  <body>
+		<form name="ipnutForm">
+		<table>
+		<tr><td><a>userid</a></td><td><input type="text" id="userid" value="stumpjumper"></td></tr>
+		<tr><td><a>password</a></td><td><input type="password" id="password" value="sakyo0704"><br/></td></tr>
+		</table>
+		<br/>
+		 <input type="button" value="submit" onClick="dosubmit()">
+		 </form>
+  </body>
+</html>

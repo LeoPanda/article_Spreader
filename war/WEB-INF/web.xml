@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+              http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+         version="2.5"
+         xmlns="http://java.sun.com/xml/ns/javaee">
+
+  <!-- Servlets -->
+   <!-- Servlets -->
+  <servlet>
+    <servlet-name>HostAuthServiceImpl</servlet-name>
+    <servlet-class>jp.leopanda.common.server.HostAuthServiceImpl</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HostAuthServiceImpl</servlet-name>
+    <url-pattern>/articlespreader/HostAuthService</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>HostGateServiceImpl</servlet-name>
+    <servlet-class>jp.leopanda.articleSpreader.server.HostGateServiceImpl</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>HostGateServiceImpl</servlet-name>
+    <url-pattern>/articlespreader/HostGateService</url-pattern>
+  </servlet-mapping>
+  <!-- Default page to serve -->
+  <welcome-file-list>
+    <welcome-file>ArticleSpreader.html</welcome-file>
+  </welcome-file-list>
+
+</web-app>
