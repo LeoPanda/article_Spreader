@@ -26,7 +26,7 @@ import com.google.gwt.user.server.rpc.RemoteServiceServlet;
 
 public class HostGateServiceImpl extends RemoteServiceServlet implements HostGateService{
 	private static final long serialVersionUID = 1L;
-	private static final String API_KEY = "AIzaSyDKNuIBU9vxVAuYTH5eRMpGVYFiof5AdWA";
+	private static final String API_KEY = "___________";
 	public static final int MAX_RESULTS = 15;
 	private TumblrService tumblrService = new TumblrService();
 	/**

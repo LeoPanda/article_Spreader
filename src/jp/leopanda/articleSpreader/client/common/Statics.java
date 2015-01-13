@@ -15,13 +15,13 @@ import com.google.gwt.core.client.GWT;
 public class Statics {
 	//Google client ID = デプロイ先Google　App　Engineのアプリケーション識別子
 	private static final String googleClientId 
-					= "1075891745451.apps.googleusercontent.com";
+					= "___________";
 	//Tumblr OAuthアクセス諸元の初期値
 	private static final String tumblrConsumerKey 	
-					= "Q1xp1wThmoznYK4s2jzvCL56MIEWsa1q0Z7S3BZjwbCY7yIB3s";
+					= "___________";
 	private static final String tumblrConsumerSecret 	
-					= "8xVtihVs31JZrMMoskdNqREal4OpRFUmcaCeUYdzoLIY684NXz";
-	private static final String tumblrBlogName = "leopanda";
+					= "___________";
+	private static final String tumblrBlogName = "___________";
 	private static TumblrCredential tumblrClient = new TumblrAuthControl().getCredential();
 	private static final int minimumIndex = 1;	//StartIndexの最小値
 	private static String loginToken;			//Google認証トークン
